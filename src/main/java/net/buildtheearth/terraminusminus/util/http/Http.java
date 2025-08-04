@@ -25,7 +25,7 @@ import lombok.NonNull;
 import lombok.experimental.UtilityClass;
 import net.buildtheearth.terraminusminus.TerraConfig;
 import net.buildtheearth.terraminusminus.TerraMinusMinus;
-import net.daporkchop.lib.common.function.throwing.EFunction;
+import net.daporkchop.lib.common.function.exception.EFunction;
 import net.daporkchop.lib.common.misc.threadfactory.PThreadFactories;
 import net.daporkchop.lib.common.reference.cache.Cached;
 

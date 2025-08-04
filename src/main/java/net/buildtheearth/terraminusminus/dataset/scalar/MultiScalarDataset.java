@@ -30,8 +30,8 @@ import net.buildtheearth.terraminusminus.util.IntRange;
 import net.buildtheearth.terraminusminus.util.bvh.BVH;
 import net.buildtheearth.terraminusminus.util.bvh.Bounds2d;
 import net.buildtheearth.terraminusminus.util.http.Disk;
+import net.daporkchop.lib.common.function.exception.EFunction;
 import net.daporkchop.lib.common.function.io.IOFunction;
-import net.daporkchop.lib.common.function.throwing.EFunction;
 
 import static net.daporkchop.lib.common.util.PValidation.*;
 

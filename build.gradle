@@ -14,6 +14,10 @@ group = "net.buildtheearth"
 repositories {
     mavenCentral()
     maven {
+        url = "https://mvn.alps-bte.com/repository/maven-releases/"
+    }
+
+    maven {
         name = "JitPack"
         url = "https://jitpack.io/"
     }
@@ -43,7 +47,7 @@ dependencies {
     // Terra++ dependencies
     implementation "com.github.DaMatrix:commons-imaging:4c6c5dfe6401a884cb4cf53fb838c99e1dfb104c"
     implementation "com.fasterxml.jackson.core:jackson-databind:2.18.0"
-    implementation("net.daporkchop.lib:binary:0.5.7-SNAPSHOT")  {
+    implementation("net.daporkchop.lib:binary:0.5.7-ALPHA")  {
         exclude group: "io.netty"
     }
 
