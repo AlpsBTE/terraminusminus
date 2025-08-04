@@ -13,7 +13,9 @@ group = "net.buildtheearth"
 
 repositories {
     mavenCentral()
+
     maven {
+        name = "AlpsBTE - MVN Releases"
         url = "https://mvn.alps-bte.com/repository/maven-releases/"
     }
 
@@ -77,6 +79,16 @@ dependencies {
 }
 
 publishing {
+    repositories {
+        maven {
+            url = "https://mvn.alps-bte.com/repository/maven-releases/"
+            credentials {
+                username = project.findProperty('alpsUserName') ?: System.getenv('ALPS_USERNAME')
+                password = project.findProperty('alpsPassword') ?: System.getenv('ALPS_PASSWORD')
+            }
+        }
+    }
+
     publications {
         maven(MavenPublication) {
             groupId = project.group
